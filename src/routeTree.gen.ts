@@ -9,8 +9,50 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PrivacybeleidRouteImport } from './routes/privacybeleid'
+import { Route as OverOnsRouteImport } from './routes/over-ons'
+import { Route as JuridischeVermeldingenRouteImport } from './routes/juridische-vermeldingen'
+import { Route as DienstenRouteImport } from './routes/diensten'
+import { Route as CookiebeleidRouteImport } from './routes/cookiebeleid'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AlgemeneVoorwaardenRouteImport } from './routes/algemene-voorwaarden'
 import { Route as IndexRouteImport } from './routes/index'
 
+const PrivacybeleidRoute = PrivacybeleidRouteImport.update({
+  id: '/privacybeleid',
+  path: '/privacybeleid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OverOnsRoute = OverOnsRouteImport.update({
+  id: '/over-ons',
+  path: '/over-ons',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JuridischeVermeldingenRoute = JuridischeVermeldingenRouteImport.update({
+  id: '/juridische-vermeldingen',
+  path: '/juridische-vermeldingen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DienstenRoute = DienstenRouteImport.update({
+  id: '/diensten',
+  path: '/diensten',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiebeleidRoute = CookiebeleidRouteImport.update({
+  id: '/cookiebeleid',
+  path: '/cookiebeleid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AlgemeneVoorwaardenRoute = AlgemeneVoorwaardenRouteImport.update({
+  id: '/algemene-voorwaarden',
+  path: '/algemene-voorwaarden',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +61,130 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/algemene-voorwaarden': typeof AlgemeneVoorwaardenRoute
+  '/contact': typeof ContactRoute
+  '/cookiebeleid': typeof CookiebeleidRoute
+  '/diensten': typeof DienstenRoute
+  '/juridische-vermeldingen': typeof JuridischeVermeldingenRoute
+  '/over-ons': typeof OverOnsRoute
+  '/privacybeleid': typeof PrivacybeleidRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/algemene-voorwaarden': typeof AlgemeneVoorwaardenRoute
+  '/contact': typeof ContactRoute
+  '/cookiebeleid': typeof CookiebeleidRoute
+  '/diensten': typeof DienstenRoute
+  '/juridische-vermeldingen': typeof JuridischeVermeldingenRoute
+  '/over-ons': typeof OverOnsRoute
+  '/privacybeleid': typeof PrivacybeleidRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/algemene-voorwaarden': typeof AlgemeneVoorwaardenRoute
+  '/contact': typeof ContactRoute
+  '/cookiebeleid': typeof CookiebeleidRoute
+  '/diensten': typeof DienstenRoute
+  '/juridische-vermeldingen': typeof JuridischeVermeldingenRoute
+  '/over-ons': typeof OverOnsRoute
+  '/privacybeleid': typeof PrivacybeleidRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/algemene-voorwaarden'
+    | '/contact'
+    | '/cookiebeleid'
+    | '/diensten'
+    | '/juridische-vermeldingen'
+    | '/over-ons'
+    | '/privacybeleid'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/algemene-voorwaarden'
+    | '/contact'
+    | '/cookiebeleid'
+    | '/diensten'
+    | '/juridische-vermeldingen'
+    | '/over-ons'
+    | '/privacybeleid'
+  id:
+    | '__root__'
+    | '/'
+    | '/algemene-voorwaarden'
+    | '/contact'
+    | '/cookiebeleid'
+    | '/diensten'
+    | '/juridische-vermeldingen'
+    | '/over-ons'
+    | '/privacybeleid'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AlgemeneVoorwaardenRoute: typeof AlgemeneVoorwaardenRoute
+  ContactRoute: typeof ContactRoute
+  CookiebeleidRoute: typeof CookiebeleidRoute
+  DienstenRoute: typeof DienstenRoute
+  JuridischeVermeldingenRoute: typeof JuridischeVermeldingenRoute
+  OverOnsRoute: typeof OverOnsRoute
+  PrivacybeleidRoute: typeof PrivacybeleidRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/privacybeleid': {
+      id: '/privacybeleid'
+      path: '/privacybeleid'
+      fullPath: '/privacybeleid'
+      preLoaderRoute: typeof PrivacybeleidRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/over-ons': {
+      id: '/over-ons'
+      path: '/over-ons'
+      fullPath: '/over-ons'
+      preLoaderRoute: typeof OverOnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/juridische-vermeldingen': {
+      id: '/juridische-vermeldingen'
+      path: '/juridische-vermeldingen'
+      fullPath: '/juridische-vermeldingen'
+      preLoaderRoute: typeof JuridischeVermeldingenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diensten': {
+      id: '/diensten'
+      path: '/diensten'
+      fullPath: '/diensten'
+      preLoaderRoute: typeof DienstenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookiebeleid': {
+      id: '/cookiebeleid'
+      path: '/cookiebeleid'
+      fullPath: '/cookiebeleid'
+      preLoaderRoute: typeof CookiebeleidRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/algemene-voorwaarden': {
+      id: '/algemene-voorwaarden'
+      path: '/algemene-voorwaarden'
+      fullPath: '/algemene-voorwaarden'
+      preLoaderRoute: typeof AlgemeneVoorwaardenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,7 +197,24 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AlgemeneVoorwaardenRoute: AlgemeneVoorwaardenRoute,
+  ContactRoute: ContactRoute,
+  CookiebeleidRoute: CookiebeleidRoute,
+  DienstenRoute: DienstenRoute,
+  JuridischeVermeldingenRoute: JuridischeVermeldingenRoute,
+  OverOnsRoute: OverOnsRoute,
+  PrivacybeleidRoute: PrivacybeleidRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
