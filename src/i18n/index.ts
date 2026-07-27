@@ -8,26 +8,25 @@ import de from "./locales/de.json";
 import ar from "./locales/ar.json";
 
 if (!i18n.isInitialized) {
-  i18n
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-      resources: {
-        nl: { translation: nl },
-        en: { translation: en },
-        fr: { translation: fr },
-        de: { translation: de },
-        ar: { translation: ar },
-      },
-      fallbackLng: "nl",
-      supportedLngs: ["nl", "en", "fr", "de", "ar"],
-      interpolation: { escapeValue: false },
-      detection: {
-        order: ["localStorage", "navigator"],
-        caches: ["localStorage"],
-        lookupLocalStorage: "ramo_lang",
-      },
-    });
+  const chain = typeof window === "undefined" ? i18n.use(initReactI18next) : i18n.use(LanguageDetector).use(initReactI18next);
+  chain.init({
+    resources: {
+      nl: { translation: nl },
+      en: { translation: en },
+      fr: { translation: fr },
+      de: { translation: de },
+      ar: { translation: ar },
+    },
+    lng: typeof window === "undefined" ? "nl" : undefined,
+    fallbackLng: "nl",
+    supportedLngs: ["nl", "en", "fr", "de", "ar"],
+    interpolation: { escapeValue: false },
+    detection: {
+      order: ["localStorage"],
+      caches: ["localStorage"],
+      lookupLocalStorage: "ramo_lang",
+    },
+  });
 }
 
 export const LANGUAGES = [
