@@ -1,15 +1,22 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
 import nl from "./locales/nl.json";
 import en from "./locales/en.json";
 import fr from "./locales/fr.json";
 import de from "./locales/de.json";
 import ar from "./locales/ar.json";
 
+const STORAGE_KEY = "ramo_lang";
+
+function initialLng() {
+  if (typeof window === "undefined") return "nl";
+  const saved = window.localStorage.getItem(STORAGE_KEY);
+  if (saved && ["nl", "en", "fr", "de", "ar"].includes(saved)) return saved;
+  return "nl";
+}
+
 if (!i18n.isInitialized) {
-  const chain = typeof window === "undefined" ? i18n.use(initReactI18next) : i18n.use(LanguageDetector).use(initReactI18next);
-  chain.init({
+  i18n.use(initReactI18next).init({
     resources: {
       nl: { translation: nl },
       en: { translation: en },
@@ -17,15 +24,16 @@ if (!i18n.isInitialized) {
       de: { translation: de },
       ar: { translation: ar },
     },
-    lng: typeof window === "undefined" ? "nl" : undefined,
+    lng: initialLng(),
     fallbackLng: "nl",
     supportedLngs: ["nl", "en", "fr", "de", "ar"],
     interpolation: { escapeValue: false },
-    detection: {
-      order: ["localStorage"],
-      caches: ["localStorage"],
-      lookupLocalStorage: "ramo_lang",
-    },
+  });
+}
+
+if (typeof window !== "undefined") {
+  i18n.on("languageChanged", (lng) => {
+    try { window.localStorage.setItem(STORAGE_KEY, lng); } catch {}
   });
 }
 
