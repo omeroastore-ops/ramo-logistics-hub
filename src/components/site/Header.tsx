@@ -1,9 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Menu, Truck, X } from "lucide-react";
+import { Menu, Phone, Truck, X } from "lucide-react";
 import { useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Button } from "@/components/ui/button";
+import { COMPANY } from "@/lib/company";
 
 export function Header() {
   const { t } = useTranslation();
@@ -18,13 +19,13 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-background/60 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="grid h-9 w-9 place-items-center rounded-xl" style={{ background: "var(--gradient-primary)" }}>
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
+        <Link to="/" className="flex min-w-0 items-center gap-2.5">
+          <div className="grid h-9 w-9 shrink-0 place-items-center rounded-xl" style={{ background: "var(--gradient-primary)" }}>
             <Truck className="h-5 w-5 text-white" />
           </div>
-          <div className="leading-tight">
-            <div className="text-sm font-black tracking-tight">RAMO TRANSPORT</div>
+          <div className="leading-tight min-w-0">
+            <div className="text-sm font-black tracking-tight truncate">RAMO TRANSPORT</div>
             <div className="text-[10px] font-semibold text-primary-glow tracking-widest">BV · BELGIUM</div>
           </div>
         </Link>
@@ -45,11 +46,12 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
-          <Link to="/contact" className="hidden sm:inline-flex">
-            <Button className="rounded-full shadow-[var(--shadow-glow)]" style={{ background: "var(--gradient-primary)" }}>
-              {t("nav.quote")}
+          <a href={`tel:${COMPANY.phoneRaw}`} className="hidden sm:inline-flex">
+            <Button className="rounded-full shadow-[var(--shadow-glow)] gap-2" style={{ background: "var(--gradient-primary)" }}>
+              <Phone className="h-4 w-4" />
+              {t("nav.callNow")}
             </Button>
-          </Link>
+          </a>
           <button
             className="lg:hidden glass rounded-full p-2"
             aria-label="Menu"
@@ -73,11 +75,18 @@ export function Header() {
                 {n.label}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setOpen(false)}>
-              <Button className="mt-2 w-full rounded-full" style={{ background: "var(--gradient-primary)" }}>
-                {t("nav.quote")}
-              </Button>
-            </Link>
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              <a href={`tel:${COMPANY.phoneRaw}`} onClick={() => setOpen(false)}>
+                <Button className="w-full rounded-full gap-2" style={{ background: "var(--gradient-primary)" }}>
+                  <Phone className="h-4 w-4" /> {t("nav.callNow")}
+                </Button>
+              </a>
+              <Link to="/contact" onClick={() => setOpen(false)}>
+                <Button variant="outline" className="w-full rounded-full glass border-white/15">
+                  {t("nav.contact")}
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       )}

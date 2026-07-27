@@ -1,7 +1,7 @@
 {
   "brand": { "name": "RAMO TRANSPORT BV", "tagline": "Transport & Logistique Belges" },
   "announcement": "Partenaire logistique agréé en Belgique | Transport national & européen",
-  "nav": { "home": "Accueil", "services": "Services", "about": "À propos", "network": "Flotte & Réseau", "contact": "Contact", "quote": "Demander un devis" },
+  "nav": { "home": "Accueil", "services": "Services", "about": "À propos", "contact": "Contact", "callNow": "Appeler" },
   "hero": {
     "eyebrow": "Logistique du dernier kilomètre fiable",
     "title": "Une logistique du dernier kilomètre fiable pour des partenaires solides",
@@ -10,14 +10,16 @@
     "ctaSecondary": "Voir nos services"
   },
   "trust": {
-    "status": "Entreprise belge active",
+    "status": "Statut de l'entreprise",
+    "statusValue": "Active · Entreprise belge",
     "kbo": "BCE / TVA",
     "form": "Forme juridique",
     "formValue": "Société à Responsabilité Limitée (BV)",
     "location": "Siège social",
-    "locationValue": "Sint-Pieters-Leeuw / Bruxelles"
+    "locationValue": "Sint-Pieters-Leeuw, Bruxelles"
   },
   "pillars": {
+    "eyebrow": "Piliers",
     "title": "Pourquoi choisir RAMO",
     "subtitle": "Quatre piliers fondamentaux pour chaque mission.",
     "01": { "title": "Approche professionnelle", "desc": "Gestion de transport de niveau entreprise, discipline opérationnelle éprouvée." },
@@ -26,29 +28,35 @@
     "04": { "title": "Support fiable", "desc": "Équipe support logistique dédiée, 7 jours sur 7." }
   },
   "services": {
+    "eyebrow": "Services",
     "title": "Nos services principaux",
     "subtitle": "Solutions logistiques complètes pour partenaires belges et européens.",
     "freight": { "title": "Transport national & international", "desc": "Transport européen avec flotte certifiée et assurance complète." },
     "lastmile": { "title": "Logistique du dernier kilomètre", "desc": "Livraison express B2B et B2C avec suivi en temps réel." },
     "sorting": { "title": "Tri & distribution", "desc": "Supply chain et entreposage avec technologie de tri avancée." },
     "retail": { "title": "Logistique retail & alimentaire", "desc": "Transport retail et alimentaire spécialisé, sec et température contrôlée." },
-    "learnMore": "En savoir plus"
+    "learnMore": "En savoir plus",
+    "points": {
+      "freight": ["Itinéraires UE", "Chargements complets & partiels", "Suivi 24/7"],
+      "lastmile": ["Options jour même", "Mises à jour temps réel", "B2B & B2C"],
+      "sorting": ["Cross-docking", "Tri automatisé", "KPI de stock"],
+      "retail": ["Sec & réfrigéré", "Conforme HACCP", "Planification retail"]
+    }
   },
-  "quote": {
-    "title": "Devis fret instantané",
-    "subtitle": "Complétez les détails pour un prix indicatif sous 24h.",
-    "origin": "Ville d'enlèvement",
-    "destination": "Ville de livraison",
-    "weight": "Poids (kg)",
-    "cargo": "Type de marchandise",
-    "cargoOptions": { "pallets": "Palettes", "parcel": "Colis", "food": "Alimentaire", "bulk": "Vrac" },
-    "service": "Niveau de service",
-    "serviceOptions": { "standard": "Standard", "express": "Express", "sameday": "Jour même" },
-    "submit": "Demander un devis",
-    "estimate": "Prix estimé",
-    "success": "Demande envoyée — nous vous contactons sous 24h."
+  "diensten": {
+    "featuresTitle": "Flotte, technologie & SLA",
+    "featuresSubtitle": "Standards opérationnels éprouvés selon la réglementation belge et européenne.",
+    "features": {
+      "sla": { "t": "SLA & assurance", "d": "Conforme CMR, entièrement assuré à la valeur pleine." },
+      "route": { "t": "Optimisation d'itinéraires", "d": "Planification assistée par IA avec données trafic en direct." },
+      "temp": { "t": "Fret sous température", "d": "Chaîne du froid certifiée pour l'alimentaire." },
+      "ops": { "t": "Opérations 24/7", "d": "Équipe dispatch dédiée jour et nuit." }
+    },
+    "ctaTitle": "Prêts à collaborer ?",
+    "ctaSubtitle": "Contactez directement notre équipe opérations pour un entretien sur mesure."
   },
   "about": {
+    "eyebrow": "À propos",
     "title": "À propos de RAMO TRANSPORT BV",
     "lead": "Dirigée par le gérant Muhanad Younes, RAMO TRANSPORT BV bâtit un service logistique moderne, fiable et durable pour le marché belge et européen.",
     "missionTitle": "Mission",
@@ -67,24 +75,23 @@
       "routes": "Routes actives en Europe",
       "delivery": "Taux de livraison à l'heure",
       "support": "Disponibilité support"
-    }
+    },
+    "leadershipEyebrow": "Direction",
+    "leadershipTitle": "Gérant — {{director}}",
+    "leadershipBody": "Sous la direction de {{director}}, {{company}} allie discipline opérationnelle et engagement fort envers la réglementation belge, la sécurité et la durabilité. Chaque transport est exécuté selon les plus hauts standards de professionnalisme et de transparence."
   },
   "contact": {
-    "title": "Contact & devis",
-    "subtitle": "Contactez notre équipe pour tarifs, partenariats ou expéditions urgentes.",
+    "eyebrow": "Contact",
+    "title": "Contact & support",
+    "subtitle": "Contactez directement notre équipe opérations pour toute demande générale, partenariat ou envoi urgent.",
+    "emailUs": "Envoyez-nous un e-mail",
+    "inquiriesTitle": "Demandes générales & support opérationnel",
+    "inquiriesBody": "Pour toute demande, la voie la plus rapide est le téléphone ou l'e-mail. Nous répondons à chaque demande durant les heures ouvrées.",
     "phone": "Téléphone / GSM",
     "email": "E-mail",
     "address": "Adresse",
     "hours": "Disponibilité",
-    "hoursValue": "Lun – Sam, 07:00 – 20:00",
-    "formTitle": "Demande fret",
-    "name": "Nom",
-    "company": "Société",
-    "message": "Message",
-    "gdpr": "J'accepte le traitement de mes données selon la politique de confidentialité (RGPD).",
-    "send": "Envoyer",
-    "successToast": "Merci — votre demande a été envoyée.",
-    "errorGdpr": "Veuillez accepter les conditions de confidentialité."
+    "hoursValue": "Lun – Sam, 07:00 – 20:00"
   },
   "cookies": {
     "title": "Nous respectons votre vie privée",
@@ -99,7 +106,17 @@
     "company": "Société",
     "contactCol": "Contact",
     "rights": "Tous droits réservés.",
-    "jurisdiction": "RPM Bruxelles · Tribunal de l'entreprise francophone"
+    "jurisdiction": "RPM Bruxelles · Tribunal de l'entreprise francophone",
+    "kboLabel": "BCE",
+    "vatLabel": "TVA",
+    "directorLabel": "Gérant"
   },
-  "legal": { "privacy": "Politique de confidentialité", "terms": "Conditions générales", "cookies": "Politique cookies", "notice": "Mentions légales" }
+  "legal": {
+    "eyebrow": "Juridique",
+    "updated": "Dernière mise à jour",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "cookies": "Politique cookies",
+    "notice": "Mentions légales"
+  }
 }

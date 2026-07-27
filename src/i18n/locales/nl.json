@@ -5,9 +5,8 @@
     "home": "Home",
     "services": "Diensten",
     "about": "Over Ons",
-    "network": "Vloot & Netwerk",
     "contact": "Contact",
-    "quote": "Offerte Aanvragen"
+    "callNow": "Direct Bellen"
   },
   "hero": {
     "eyebrow": "Betrouwbare last-mile logistiek",
@@ -17,14 +16,16 @@
     "ctaSecondary": "Bekijk Onze Diensten"
   },
   "trust": {
-    "status": "Actieve Belgische onderneming",
+    "status": "Bedrijfsstatus",
+    "statusValue": "Actief · Belgische onderneming",
     "kbo": "KBO / BTW",
     "form": "Rechtsvorm",
     "formValue": "Besloten Vennootschap (BV)",
     "location": "Vestiging",
-    "locationValue": "Sint-Pieters-Leeuw / Brussel"
+    "locationValue": "Sint-Pieters-Leeuw, Brussel"
   },
   "pillars": {
+    "eyebrow": "Pijlers",
     "title": "Waarom kiezen voor RAMO",
     "subtitle": "Vier fundamentele pijlers die elke opdracht ondersteunen.",
     "01": { "title": "Professionele aanpak", "desc": "Enterprise-level transport management met bewezen operationele discipline." },
@@ -33,29 +34,35 @@
     "04": { "title": "Betrouwbare ondersteuning", "desc": "Toegewijd logistiek support team, 7 dagen op 7 bereikbaar." }
   },
   "services": {
+    "eyebrow": "Diensten",
     "title": "Onze Kern Diensten",
     "subtitle": "Volledige logistieke oplossingen, gebouwd voor Belgische en Europese partners.",
     "freight": { "title": "Nationaal & Internationaal Goederentransport", "desc": "Europees goederentransport met gecertificeerde vloot en volledige verzekering." },
     "lastmile": { "title": "Last-Mile Logistiek & Bezorging", "desc": "Express bezorging op maat voor B2B en B2C, met real-time tracking." },
     "sorting": { "title": "Sorteerprocessen & Distributie", "desc": "Supply chain en warehousing oplossingen met geavanceerde sorteertechnologie." },
     "retail": { "title": "Detailhandel & Levensmiddelen Logistiek", "desc": "Gespecialiseerd retail en food transport met droog en gecontroleerde temperatuur." },
-    "learnMore": "Meer informatie"
+    "learnMore": "Meer informatie",
+    "points": {
+      "freight": ["EU-brede routes", "Full & partial loads", "24/7 tracking"],
+      "lastmile": ["Same-day opties", "Real-time updates", "B2B & B2C"],
+      "sorting": ["Cross-docking", "Automatische sortering", "Voorraad-KPI's"],
+      "retail": ["Droog & gekoeld", "HACCP conform", "Retail-planning"]
+    }
   },
-  "quote": {
-    "title": "Snelle Vracht Offerte",
-    "subtitle": "Vul onderstaande gegevens in voor een indicatieve prijs binnen 24u.",
-    "origin": "Ophaaladres (stad)",
-    "destination": "Leveringsadres (stad)",
-    "weight": "Gewicht (kg)",
-    "cargo": "Type lading",
-    "cargoOptions": { "pallets": "Pallets", "parcel": "Pakketten", "food": "Levensmiddelen", "bulk": "Bulk" },
-    "service": "Service niveau",
-    "serviceOptions": { "standard": "Standaard", "express": "Express", "sameday": "Same-day" },
-    "submit": "Offerte Aanvragen",
-    "estimate": "Geschatte prijs",
-    "success": "Aanvraag verzonden — wij nemen contact met u op binnen 24u."
+  "diensten": {
+    "featuresTitle": "Vloot, technologie & SLA",
+    "featuresSubtitle": "Bewezen operationele standaarden volgens Belgische en Europese transportregelgeving.",
+    "features": {
+      "sla": { "t": "SLA & Verzekering", "d": "CMR-conform, volledig verzekerd tot volle waarde." },
+      "route": { "t": "Route-optimalisatie", "d": "AI-ondersteunde planning met live verkeersdata." },
+      "temp": { "t": "Temperatuurgeleide vracht", "d": "Gecertificeerde koelketen voor levensmiddelen." },
+      "ops": { "t": "24/7 operations", "d": "Toegewijd dispatch team dag en nacht bereikbaar." }
+    },
+    "ctaTitle": "Klaar om samen te werken?",
+    "ctaSubtitle": "Neem rechtstreeks contact op met ons operations team voor een gesprek op maat."
   },
   "about": {
+    "eyebrow": "Over ons",
     "title": "Over RAMO TRANSPORT BV",
     "lead": "Geleid door zaakvoerder Muhanad Younes bouwt RAMO TRANSPORT BV aan een moderne, betrouwbare en duurzame logistieke dienstverlening voor de Belgische en Europese markt.",
     "missionTitle": "Missie",
@@ -74,24 +81,23 @@
       "routes": "Actieve routes in Europa",
       "delivery": "On-time leverpercentage",
       "support": "Support beschikbaarheid"
-    }
+    },
+    "leadershipEyebrow": "Leadership",
+    "leadershipTitle": "Zaakvoerder — {{director}}",
+    "leadershipBody": "Onder leiding van {{director}} combineert {{company}} operationele discipline met een sterk engagement voor Belgische regelgeving, veiligheid en duurzaamheid. Elk transport wordt uitgevoerd volgens de hoogste standaarden van professionaliteit en transparantie."
   },
   "contact": {
-    "title": "Contact & Offertes",
-    "subtitle": "Neem contact op met ons operations team voor tarieven, samenwerkingen of dringende ritten.",
+    "eyebrow": "Contact",
+    "title": "Contact & Ondersteuning",
+    "subtitle": "Neem rechtstreeks contact op met ons operations team voor algemene vragen, samenwerkingen of dringende ritten.",
+    "emailUs": "Stuur ons een e-mail",
+    "inquiriesTitle": "Algemene vragen & operationele ondersteuning",
+    "inquiriesBody": "Voor alle inlichtingen bereikt u ons team het snelst via telefoon of e-mail. Wij antwoorden binnen de kantooruren op elke aanvraag.",
     "phone": "Telefoon / GSM",
     "email": "E-mail",
     "address": "Adres",
     "hours": "Bereikbaarheid",
-    "hoursValue": "Ma – Za, 07:00 – 20:00",
-    "formTitle": "Vracht Aanvraag",
-    "name": "Naam",
-    "company": "Bedrijf",
-    "message": "Bericht",
-    "gdpr": "Ik ga akkoord met de verwerking van mijn gegevens conform het privacybeleid (AVG / GDPR).",
-    "send": "Verzenden",
-    "successToast": "Bedankt — uw aanvraag is verzonden.",
-    "errorGdpr": "Gelieve akkoord te gaan met de privacyvoorwaarden."
+    "hoursValue": "Ma – Za, 07:00 – 20:00"
   },
   "cookies": {
     "title": "Wij respecteren uw privacy",
@@ -106,9 +112,14 @@
     "company": "Bedrijf",
     "contactCol": "Contact",
     "rights": "Alle rechten voorbehouden.",
-    "jurisdiction": "RPR Brussel · Nederlandstalige ondernemingsrechtbank Brussel"
+    "jurisdiction": "RPR Brussel · Nederlandstalige ondernemingsrechtbank Brussel",
+    "kboLabel": "KBO",
+    "vatLabel": "BTW",
+    "directorLabel": "Zaakvoerder"
   },
   "legal": {
+    "eyebrow": "Juridisch",
+    "updated": "Laatst bijgewerkt",
     "privacy": "Privacybeleid",
     "terms": "Algemene Voorwaarden",
     "cookies": "Cookiebeleid",

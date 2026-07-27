@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import { Target, Eye, Leaf, Handshake, ShieldCheck, Clock } from "lucide-react";
 import { COMPANY } from "@/lib/company";
 
@@ -37,7 +37,7 @@ function About() {
       <section className="relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <div className="text-xs font-bold uppercase tracking-widest text-primary-glow">About</div>
+            <div className="text-xs font-bold uppercase tracking-widest text-primary-glow">{t("about.eyebrow")}</div>
             <h1 className="mt-3 text-4xl sm:text-5xl font-black tracking-tight">{t("about.title")}</h1>
             <p className="mt-4 text-lg text-muted-foreground">{t("about.lead")}</p>
           </div>
@@ -85,10 +85,12 @@ function About() {
         </div>
 
         <div className="mt-16 glass-strong rounded-3xl p-8 sm:p-12">
-          <div className="text-xs font-bold uppercase tracking-widest text-primary-glow">Leadership</div>
-          <h3 className="mt-2 text-2xl sm:text-3xl font-black">Zaakvoerder — {COMPANY.director}</h3>
+          <div className="text-xs font-bold uppercase tracking-widest text-primary-glow">{t("about.leadershipEyebrow")}</div>
+          <h3 className="mt-2 text-2xl sm:text-3xl font-black">
+            <Trans i18nKey="about.leadershipTitle" values={{ director: COMPANY.director }} />
+          </h3>
           <p className="mt-3 text-muted-foreground max-w-3xl">
-            Onder leiding van {COMPANY.director} combineert {COMPANY.legalName} operationele discipline met een sterk engagement voor Belgische regelgeving, veiligheid en duurzaamheid. Elk transport wordt uitgevoerd volgens de hoogste standaarden van professionaliteit en transparantie.
+            <Trans i18nKey="about.leadershipBody" values={{ director: COMPANY.director, company: COMPANY.legalName }} />
           </p>
         </div>
       </section>
