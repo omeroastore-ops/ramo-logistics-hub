@@ -1,7 +1,7 @@
 {
   "brand": { "name": "RAMO TRANSPORT BV", "tagline": "Belgische Fracht & Logistik" },
   "announcement": "Belgisch lizenzierter Logistikpartner | Nationaler & europäischer Transport",
-  "nav": { "home": "Start", "services": "Leistungen", "about": "Über uns", "network": "Flotte & Netzwerk", "contact": "Kontakt", "quote": "Angebot anfragen" },
+  "nav": { "home": "Start", "services": "Leistungen", "about": "Über uns", "contact": "Kontakt", "callNow": "Jetzt anrufen" },
   "hero": {
     "eyebrow": "Zuverlässige Last-Mile-Logistik",
     "title": "Zuverlässige Last-Mile-Logistik für starke Partner",
@@ -10,14 +10,16 @@
     "ctaSecondary": "Unsere Leistungen"
   },
   "trust": {
-    "status": "Aktives belgisches Unternehmen",
+    "status": "Unternehmensstatus",
+    "statusValue": "Aktiv · Belgisches Unternehmen",
     "kbo": "KBO / USt",
     "form": "Rechtsform",
     "formValue": "Besloten Vennootschap (BV)",
     "location": "Firmensitz",
-    "locationValue": "Sint-Pieters-Leeuw / Brüssel"
+    "locationValue": "Sint-Pieters-Leeuw, Brüssel"
   },
   "pillars": {
+    "eyebrow": "Säulen",
     "title": "Warum RAMO",
     "subtitle": "Vier Grundpfeiler für jeden Auftrag.",
     "01": { "title": "Professioneller Ansatz", "desc": "Transportmanagement auf Enterprise-Niveau mit bewährter Disziplin." },
@@ -26,29 +28,35 @@
     "04": { "title": "Verlässlicher Support", "desc": "Engagiertes Logistik-Team, 7 Tage die Woche." }
   },
   "services": {
+    "eyebrow": "Leistungen",
     "title": "Unsere Kernleistungen",
     "subtitle": "Vollständige Logistiklösungen für belgische und europäische Partner.",
     "freight": { "title": "Nationaler & internationaler Gütertransport", "desc": "Europäischer Gütertransport mit zertifizierter Flotte und Vollversicherung." },
     "lastmile": { "title": "Last-Mile-Logistik & Zustellung", "desc": "Express B2B/B2C-Zustellung mit Echtzeit-Tracking." },
     "sorting": { "title": "Sortierprozesse & Distribution", "desc": "Supply-Chain- und Warehousing-Lösungen mit moderner Sortiertechnik." },
     "retail": { "title": "Retail & Lebensmittellogistik", "desc": "Spezialisierter Retail- und Lebensmitteltransport, trocken und temperaturgeführt." },
-    "learnMore": "Mehr erfahren"
+    "learnMore": "Mehr erfahren",
+    "points": {
+      "freight": ["EU-weite Routen", "Voll- & Teilladungen", "24/7-Tracking"],
+      "lastmile": ["Same-Day-Optionen", "Echtzeit-Updates", "B2B & B2C"],
+      "sorting": ["Cross-Docking", "Automatische Sortierung", "Bestands-KPIs"],
+      "retail": ["Trocken & gekühlt", "HACCP-konform", "Retail-Planung"]
+    }
   },
-  "quote": {
-    "title": "Sofort-Frachtangebot",
-    "subtitle": "Details eintragen für einen Richtpreis innerhalb 24h.",
-    "origin": "Abholstadt",
-    "destination": "Lieferstadt",
-    "weight": "Gewicht (kg)",
-    "cargo": "Ladungsart",
-    "cargoOptions": { "pallets": "Paletten", "parcel": "Pakete", "food": "Lebensmittel", "bulk": "Bulk" },
-    "service": "Service-Level",
-    "serviceOptions": { "standard": "Standard", "express": "Express", "sameday": "Same-day" },
-    "submit": "Angebot anfragen",
-    "estimate": "Geschätzter Preis",
-    "success": "Anfrage gesendet — wir melden uns innerhalb von 24h."
+  "diensten": {
+    "featuresTitle": "Flotte, Technologie & SLA",
+    "featuresSubtitle": "Bewährte operative Standards nach belgischen und europäischen Transportvorschriften.",
+    "features": {
+      "sla": { "t": "SLA & Versicherung", "d": "CMR-konform, voll versichert bis zum vollen Warenwert." },
+      "route": { "t": "Routenoptimierung", "d": "KI-gestützte Planung mit Live-Verkehrsdaten." },
+      "temp": { "t": "Temperaturgeführte Fracht", "d": "Zertifizierte Kühlkette für Lebensmittel." },
+      "ops": { "t": "24/7-Betrieb", "d": "Engagiertes Dispatch-Team Tag und Nacht erreichbar." }
+    },
+    "ctaTitle": "Bereit für eine Zusammenarbeit?",
+    "ctaSubtitle": "Kontaktieren Sie unser Operations-Team direkt für ein individuelles Gespräch."
   },
   "about": {
+    "eyebrow": "Über uns",
     "title": "Über RAMO TRANSPORT BV",
     "lead": "Unter der Leitung von Geschäftsführer Muhanad Younes baut RAMO TRANSPORT BV einen modernen, zuverlässigen und nachhaltigen Logistikdienst für den belgischen und europäischen Markt.",
     "missionTitle": "Mission",
@@ -67,24 +75,23 @@
       "routes": "Aktive Routen in Europa",
       "delivery": "Pünktlichkeitsquote",
       "support": "Support-Verfügbarkeit"
-    }
+    },
+    "leadershipEyebrow": "Führung",
+    "leadershipTitle": "Geschäftsführer — {{director}}",
+    "leadershipBody": "Unter der Leitung von {{director}} verbindet {{company}} operative Disziplin mit einem starken Engagement für belgische Vorschriften, Sicherheit und Nachhaltigkeit. Jeder Transport wird nach höchsten Standards von Professionalität und Transparenz durchgeführt."
   },
   "contact": {
-    "title": "Kontakt & Angebote",
-    "subtitle": "Kontaktieren Sie unser Team für Tarife, Partnerschaften oder dringende Transporte.",
+    "eyebrow": "Kontakt",
+    "title": "Kontakt & Support",
+    "subtitle": "Kontaktieren Sie unser Operations-Team direkt für allgemeine Anfragen, Partnerschaften oder dringende Transporte.",
+    "emailUs": "Schreiben Sie uns eine E-Mail",
+    "inquiriesTitle": "Allgemeine Anfragen & operativer Support",
+    "inquiriesBody": "Für jede Anfrage erreichen Sie unser Team am schnellsten telefonisch oder per E-Mail. Wir antworten während der Bürozeiten auf jede Anfrage.",
     "phone": "Telefon / Mobil",
     "email": "E-Mail",
     "address": "Adresse",
     "hours": "Verfügbarkeit",
-    "hoursValue": "Mo – Sa, 07:00 – 20:00",
-    "formTitle": "Frachtanfrage",
-    "name": "Name",
-    "company": "Firma",
-    "message": "Nachricht",
-    "gdpr": "Ich stimme der Verarbeitung meiner Daten gemäß Datenschutzerklärung (DSGVO) zu.",
-    "send": "Senden",
-    "successToast": "Danke — Ihre Anfrage wurde gesendet.",
-    "errorGdpr": "Bitte akzeptieren Sie die Datenschutzbedingungen."
+    "hoursValue": "Mo – Sa, 07:00 – 20:00"
   },
   "cookies": {
     "title": "Wir respektieren Ihre Privatsphäre",
@@ -99,7 +106,17 @@
     "company": "Unternehmen",
     "contactCol": "Kontakt",
     "rights": "Alle Rechte vorbehalten.",
-    "jurisdiction": "RPR Brüssel · Niederländischsprachiges Unternehmensgericht Brüssel"
+    "jurisdiction": "RPR Brüssel · Niederländischsprachiges Unternehmensgericht Brüssel",
+    "kboLabel": "KBO",
+    "vatLabel": "USt",
+    "directorLabel": "Geschäftsführer"
   },
-  "legal": { "privacy": "Datenschutz", "terms": "AGB", "cookies": "Cookie-Richtlinie", "notice": "Impressum" }
+  "legal": {
+    "eyebrow": "Rechtliches",
+    "updated": "Zuletzt aktualisiert",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "cookies": "Cookie-Richtlinie",
+    "notice": "Impressum"
+  }
 }

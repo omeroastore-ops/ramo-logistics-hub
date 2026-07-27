@@ -1,7 +1,7 @@
 {
   "brand": { "name": "RAMO TRANSPORT BV", "tagline": "Belgian Freight & Logistics" },
   "announcement": "Belgian Licensed Logistics Partner | National & European Transport",
-  "nav": { "home": "Home", "services": "Services", "about": "About", "network": "Fleet & Network", "contact": "Contact", "quote": "Request Quote" },
+  "nav": { "home": "Home", "services": "Services", "about": "About", "contact": "Contact", "callNow": "Call Now" },
   "hero": {
     "eyebrow": "Reliable last-mile logistics",
     "title": "Reliable last-mile logistics for strong partners",
@@ -10,14 +10,16 @@
     "ctaSecondary": "See Our Services"
   },
   "trust": {
-    "status": "Active Belgian company",
+    "status": "Company status",
+    "statusValue": "Active · Belgian company",
     "kbo": "KBO / VAT",
     "form": "Legal form",
     "formValue": "Besloten Vennootschap (BV)",
     "location": "Registered office",
-    "locationValue": "Sint-Pieters-Leeuw / Brussels"
+    "locationValue": "Sint-Pieters-Leeuw, Brussels"
   },
   "pillars": {
+    "eyebrow": "Pillars",
     "title": "Why choose RAMO",
     "subtitle": "Four core pillars that support every mission.",
     "01": { "title": "Professional approach", "desc": "Enterprise-grade transport management with proven operational discipline." },
@@ -26,29 +28,35 @@
     "04": { "title": "Reliable support", "desc": "Dedicated logistics support team, 7 days a week." }
   },
   "services": {
+    "eyebrow": "Services",
     "title": "Our Core Services",
     "subtitle": "Full logistics solutions built for Belgian and European partners.",
     "freight": { "title": "National & International Freight", "desc": "European freight with certified fleet and full insurance." },
     "lastmile": { "title": "Last-Mile Logistics & Delivery", "desc": "Express B2B and B2C delivery with real-time tracking." },
     "sorting": { "title": "Sorting & Distribution", "desc": "Supply chain and warehousing with advanced sorting technology." },
     "retail": { "title": "Retail & Food Logistics", "desc": "Specialized retail and food transport, dry and temperature-controlled." },
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "points": {
+      "freight": ["EU-wide routes", "Full & partial loads", "24/7 tracking"],
+      "lastmile": ["Same-day options", "Real-time updates", "B2B & B2C"],
+      "sorting": ["Cross-docking", "Automated sorting", "Inventory KPIs"],
+      "retail": ["Dry & refrigerated", "HACCP compliant", "Retail planning"]
+    }
   },
-  "quote": {
-    "title": "Instant Freight Quote",
-    "subtitle": "Fill in the details for an indicative price within 24h.",
-    "origin": "Pickup city",
-    "destination": "Delivery city",
-    "weight": "Weight (kg)",
-    "cargo": "Cargo type",
-    "cargoOptions": { "pallets": "Pallets", "parcel": "Parcels", "food": "Food", "bulk": "Bulk" },
-    "service": "Service level",
-    "serviceOptions": { "standard": "Standard", "express": "Express", "sameday": "Same-day" },
-    "submit": "Request Quote",
-    "estimate": "Estimated price",
-    "success": "Request sent — we will contact you within 24h."
+  "diensten": {
+    "featuresTitle": "Fleet, technology & SLA",
+    "featuresSubtitle": "Proven operational standards under Belgian and European transport regulations.",
+    "features": {
+      "sla": { "t": "SLA & Insurance", "d": "CMR-compliant, fully insured up to full cargo value." },
+      "route": { "t": "Route optimization", "d": "AI-assisted planning with live traffic data." },
+      "temp": { "t": "Temperature-controlled freight", "d": "Certified cold chain for food and pharma." },
+      "ops": { "t": "24/7 operations", "d": "Dedicated dispatch team available day and night." }
+    },
+    "ctaTitle": "Ready to work together?",
+    "ctaSubtitle": "Reach out directly to our operations team for a tailored conversation."
   },
   "about": {
+    "eyebrow": "About",
     "title": "About RAMO TRANSPORT BV",
     "lead": "Led by managing director Muhanad Younes, RAMO TRANSPORT BV builds a modern, reliable and sustainable logistics service for the Belgian and European market.",
     "missionTitle": "Mission",
@@ -67,24 +75,23 @@
       "routes": "Active routes in Europe",
       "delivery": "On-time delivery rate",
       "support": "Support availability"
-    }
+    },
+    "leadershipEyebrow": "Leadership",
+    "leadershipTitle": "Managing Director — {{director}}",
+    "leadershipBody": "Under the leadership of {{director}}, {{company}} combines operational discipline with a strong commitment to Belgian regulations, safety and sustainability. Every shipment is executed to the highest standards of professionalism and transparency."
   },
   "contact": {
-    "title": "Contact & Quotes",
-    "subtitle": "Reach our operations team for rates, partnerships or urgent shipments.",
+    "eyebrow": "Contact",
+    "title": "Contact & Support",
+    "subtitle": "Reach our operations team directly for general inquiries, partnerships or urgent shipments.",
+    "emailUs": "Send us an email",
+    "inquiriesTitle": "General inquiries & operational support",
+    "inquiriesBody": "For any inquiry, the fastest way to reach our team is by phone or email. We reply to every request within business hours.",
     "phone": "Phone / Mobile",
     "email": "Email",
     "address": "Address",
     "hours": "Availability",
-    "hoursValue": "Mon – Sat, 07:00 – 20:00",
-    "formTitle": "Freight Inquiry",
-    "name": "Name",
-    "company": "Company",
-    "message": "Message",
-    "gdpr": "I consent to the processing of my data per the privacy policy (GDPR).",
-    "send": "Send",
-    "successToast": "Thanks — your request has been sent.",
-    "errorGdpr": "Please accept the privacy terms."
+    "hoursValue": "Mon – Sat, 07:00 – 20:00"
   },
   "cookies": {
     "title": "We respect your privacy",
@@ -99,7 +106,17 @@
     "company": "Company",
     "contactCol": "Contact",
     "rights": "All rights reserved.",
-    "jurisdiction": "RPR Brussels · Dutch-speaking Enterprise Court of Brussels"
+    "jurisdiction": "RPR Brussels · Dutch-speaking Enterprise Court of Brussels",
+    "kboLabel": "KBO",
+    "vatLabel": "VAT",
+    "directorLabel": "Managing Director"
   },
-  "legal": { "privacy": "Privacy Policy", "terms": "Terms & Conditions", "cookies": "Cookie Policy", "notice": "Legal Notice" }
+  "legal": {
+    "eyebrow": "Legal",
+    "updated": "Last updated",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "cookies": "Cookie Policy",
+    "notice": "Legal Notice"
+  }
 }

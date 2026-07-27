@@ -25,10 +25,16 @@ export function Footer() {
             </div>
             <p className="max-w-md text-sm text-muted-foreground">{t("footer.tagline")}</p>
             <div className="glass rounded-2xl p-4 text-xs text-muted-foreground space-y-1">
-              <div><span className="text-foreground/80 font-semibold">KBO:</span> {COMPANY.kbo}</div>
-              <div><span className="text-foreground/80 font-semibold">BTW:</span> {COMPANY.btw}</div>
+              <div><span className="text-foreground/80 font-semibold">{t("footer.kboLabel")}:</span> {COMPANY.kbo}</div>
+              <div><span className="text-foreground/80 font-semibold">{t("footer.vatLabel")}:</span> {COMPANY.btw}</div>
               <div>{t("footer.jurisdiction")}</div>
             </div>
+            <a
+              href={`tel:${COMPANY.phoneRaw}`}
+              className="inline-flex items-center gap-2 rounded-full glass px-4 py-2 text-sm font-semibold hover:text-primary-glow"
+            >
+              <Phone className="h-4 w-4 text-primary-glow" /> {t("nav.callNow")} — {COMPANY.phone}
+            </a>
           </div>
 
           <div>
@@ -66,7 +72,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-muted-foreground">
           <div>© {year} {COMPANY.legalName}. {t("footer.rights")}</div>
-          <div>Zaakvoerder: {COMPANY.director}</div>
+          <div>{t("footer.directorLabel")}: {COMPANY.director}</div>
         </div>
       </div>
     </footer>
