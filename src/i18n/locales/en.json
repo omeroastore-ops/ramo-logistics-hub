@@ -1,0 +1,105 @@
+{
+  "brand": { "name": "RAMO TRANSPORT BV", "tagline": "Belgian Freight & Logistics" },
+  "announcement": "Belgian Licensed Logistics Partner | National & European Transport",
+  "nav": { "home": "Home", "services": "Services", "about": "About", "network": "Fleet & Network", "contact": "Contact", "quote": "Request Quote" },
+  "hero": {
+    "eyebrow": "Reliable last-mile logistics",
+    "title": "Reliable last-mile logistics for strong partners",
+    "subtitle": "RAMO TRANSPORT BV delivers premium national and international transport, distribution and sorting solutions, tailored to your needs.",
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "See Our Services"
+  },
+  "trust": {
+    "status": "Active Belgian company",
+    "kbo": "KBO / VAT",
+    "form": "Legal form",
+    "formValue": "Besloten Vennootschap (BV)",
+    "location": "Registered office",
+    "locationValue": "Sint-Pieters-Leeuw / Brussels"
+  },
+  "pillars": {
+    "title": "Why choose RAMO",
+    "subtitle": "Four core pillars that support every mission.",
+    "01": { "title": "Professional approach", "desc": "Enterprise-grade transport management with proven operational discipline." },
+    "02": { "title": "Clear communication", "desc": "Transparent tracking, direct contact channels and clean reporting." },
+    "03": { "title": "Efficient execution", "desc": "Optimized fleet routes and on-time delivery across Europe." },
+    "04": { "title": "Reliable support", "desc": "Dedicated logistics support team, 7 days a week." }
+  },
+  "services": {
+    "title": "Our Core Services",
+    "subtitle": "Full logistics solutions built for Belgian and European partners.",
+    "freight": { "title": "National & International Freight", "desc": "European freight with certified fleet and full insurance." },
+    "lastmile": { "title": "Last-Mile Logistics & Delivery", "desc": "Express B2B and B2C delivery with real-time tracking." },
+    "sorting": { "title": "Sorting & Distribution", "desc": "Supply chain and warehousing with advanced sorting technology." },
+    "retail": { "title": "Retail & Food Logistics", "desc": "Specialized retail and food transport, dry and temperature-controlled." },
+    "learnMore": "Learn more"
+  },
+  "quote": {
+    "title": "Instant Freight Quote",
+    "subtitle": "Fill in the details for an indicative price within 24h.",
+    "origin": "Pickup city",
+    "destination": "Delivery city",
+    "weight": "Weight (kg)",
+    "cargo": "Cargo type",
+    "cargoOptions": { "pallets": "Pallets", "parcel": "Parcels", "food": "Food", "bulk": "Bulk" },
+    "service": "Service level",
+    "serviceOptions": { "standard": "Standard", "express": "Express", "sameday": "Same-day" },
+    "submit": "Request Quote",
+    "estimate": "Estimated price",
+    "success": "Request sent — we will contact you within 24h."
+  },
+  "about": {
+    "title": "About RAMO TRANSPORT BV",
+    "lead": "Led by managing director Muhanad Younes, RAMO TRANSPORT BV builds a modern, reliable and sustainable logistics service for the Belgian and European market.",
+    "missionTitle": "Mission",
+    "mission": "Deliver efficient and transparent freight solutions that meet the strictest Belgian and European transport regulations.",
+    "visionTitle": "Vision",
+    "vision": "Become the reference partner for last-mile and distribution logistics in the Benelux, focused on sustainability and digitalization.",
+    "valuesTitle": "Core values",
+    "values": {
+      "reliability": { "t": "Reliability", "d": "On time, every time." },
+      "compliance": { "t": "Compliance", "d": "Full Belgian & EU regulatory alignment." },
+      "sustainability": { "t": "Sustainability", "d": "Optimized routes and emission reduction." },
+      "partnership": { "t": "Partnership", "d": "Long-term relationships and transparency." }
+    },
+    "stats": {
+      "years": "Years of experience",
+      "routes": "Active routes in Europe",
+      "delivery": "On-time delivery rate",
+      "support": "Support availability"
+    }
+  },
+  "contact": {
+    "title": "Contact & Quotes",
+    "subtitle": "Reach our operations team for rates, partnerships or urgent shipments.",
+    "phone": "Phone / Mobile",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Availability",
+    "hoursValue": "Mon – Sat, 07:00 – 20:00",
+    "formTitle": "Freight Inquiry",
+    "name": "Name",
+    "company": "Company",
+    "message": "Message",
+    "gdpr": "I consent to the processing of my data per the privacy policy (GDPR).",
+    "send": "Send",
+    "successToast": "Thanks — your request has been sent.",
+    "errorGdpr": "Please accept the privacy terms."
+  },
+  "cookies": {
+    "title": "We respect your privacy",
+    "body": "We use cookies to improve our website and gather analytics. You choose which categories to accept.",
+    "accept": "Accept All",
+    "reject": "Essential Only",
+    "settings": "Settings"
+  },
+  "footer": {
+    "tagline": "Belgian logistics provider specialized in national and European freight transport.",
+    "legal": "Legal",
+    "company": "Company",
+    "contactCol": "Contact",
+    "rights": "All rights reserved.",
+    "jurisdiction": "RPR Brussels · Dutch-speaking Enterprise Court of Brussels"
+  },
+  "legal": { "privacy": "Privacy Policy", "terms": "Terms & Conditions", "cookies": "Cookie Policy", "notice": "Legal Notice" }
+}

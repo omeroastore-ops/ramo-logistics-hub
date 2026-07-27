@@ -1,0 +1,117 @@
+{
+  "brand": { "name": "RAMO TRANSPORT BV", "tagline": "Belgische Transport & Logistiek" },
+  "announcement": "Belgisch Gelicentieerde Logistieke Partner | Nationaal & Europees Transport",
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over Ons",
+    "network": "Vloot & Netwerk",
+    "contact": "Contact",
+    "quote": "Offerte Aanvragen"
+  },
+  "hero": {
+    "eyebrow": "Betrouwbare last-mile logistiek",
+    "title": "Betrouwbare last-mile logistiek voor sterke partners",
+    "subtitle": "RAMO TRANSPORT BV levert hoogwaardige nationale en internationale transportoplossingen, distributie en sorteerprocessen op maat.",
+    "ctaPrimary": "Neem Contact Op",
+    "ctaSecondary": "Bekijk Onze Diensten"
+  },
+  "trust": {
+    "status": "Actieve Belgische onderneming",
+    "kbo": "KBO / BTW",
+    "form": "Rechtsvorm",
+    "formValue": "Besloten Vennootschap (BV)",
+    "location": "Vestiging",
+    "locationValue": "Sint-Pieters-Leeuw / Brussel"
+  },
+  "pillars": {
+    "title": "Waarom kiezen voor RAMO",
+    "subtitle": "Vier fundamentele pijlers die elke opdracht ondersteunen.",
+    "01": { "title": "Professionele aanpak", "desc": "Enterprise-level transport management met bewezen operationele discipline." },
+    "02": { "title": "Duidelijke communicatie", "desc": "Transparante tracking, directe contactlijnen en heldere rapportage." },
+    "03": { "title": "Efficiënte uitvoering", "desc": "Geoptimaliseerde vlootroutes en tijdige leveringen door heel Europa." },
+    "04": { "title": "Betrouwbare ondersteuning", "desc": "Toegewijd logistiek support team, 7 dagen op 7 bereikbaar." }
+  },
+  "services": {
+    "title": "Onze Kern Diensten",
+    "subtitle": "Volledige logistieke oplossingen, gebouwd voor Belgische en Europese partners.",
+    "freight": { "title": "Nationaal & Internationaal Goederentransport", "desc": "Europees goederentransport met gecertificeerde vloot en volledige verzekering." },
+    "lastmile": { "title": "Last-Mile Logistiek & Bezorging", "desc": "Express bezorging op maat voor B2B en B2C, met real-time tracking." },
+    "sorting": { "title": "Sorteerprocessen & Distributie", "desc": "Supply chain en warehousing oplossingen met geavanceerde sorteertechnologie." },
+    "retail": { "title": "Detailhandel & Levensmiddelen Logistiek", "desc": "Gespecialiseerd retail en food transport met droog en gecontroleerde temperatuur." },
+    "learnMore": "Meer informatie"
+  },
+  "quote": {
+    "title": "Snelle Vracht Offerte",
+    "subtitle": "Vul onderstaande gegevens in voor een indicatieve prijs binnen 24u.",
+    "origin": "Ophaaladres (stad)",
+    "destination": "Leveringsadres (stad)",
+    "weight": "Gewicht (kg)",
+    "cargo": "Type lading",
+    "cargoOptions": { "pallets": "Pallets", "parcel": "Pakketten", "food": "Levensmiddelen", "bulk": "Bulk" },
+    "service": "Service niveau",
+    "serviceOptions": { "standard": "Standaard", "express": "Express", "sameday": "Same-day" },
+    "submit": "Offerte Aanvragen",
+    "estimate": "Geschatte prijs",
+    "success": "Aanvraag verzonden — wij nemen contact met u op binnen 24u."
+  },
+  "about": {
+    "title": "Over RAMO TRANSPORT BV",
+    "lead": "Geleid door zaakvoerder Muhanad Younes bouwt RAMO TRANSPORT BV aan een moderne, betrouwbare en duurzame logistieke dienstverlening voor de Belgische en Europese markt.",
+    "missionTitle": "Missie",
+    "mission": "Efficiënte en transparante freight-oplossingen leveren die voldoen aan de strengste Belgische en Europese transportregelgeving.",
+    "visionTitle": "Visie",
+    "vision": "Een referentiepartner worden voor last-mile en distributielogistiek in de Benelux, met continue focus op duurzaamheid en digitalisering.",
+    "valuesTitle": "Kernwaarden",
+    "values": {
+      "reliability": { "t": "Betrouwbaarheid", "d": "Op tijd, elke keer opnieuw." },
+      "compliance": { "t": "Compliance", "d": "Volledige naleving van Belgische en EU-regelgeving." },
+      "sustainability": { "t": "Duurzaamheid", "d": "Geoptimaliseerde routes en emissiereductie." },
+      "partnership": { "t": "Partnerschap", "d": "Langdurige relaties, transparante samenwerking." }
+    },
+    "stats": {
+      "years": "Jaren ervaring",
+      "routes": "Actieve routes in Europa",
+      "delivery": "On-time leverpercentage",
+      "support": "Support beschikbaarheid"
+    }
+  },
+  "contact": {
+    "title": "Contact & Offertes",
+    "subtitle": "Neem contact op met ons operations team voor tarieven, samenwerkingen of dringende ritten.",
+    "phone": "Telefoon / GSM",
+    "email": "E-mail",
+    "address": "Adres",
+    "hours": "Bereikbaarheid",
+    "hoursValue": "Ma – Za, 07:00 – 20:00",
+    "formTitle": "Vracht Aanvraag",
+    "name": "Naam",
+    "company": "Bedrijf",
+    "message": "Bericht",
+    "gdpr": "Ik ga akkoord met de verwerking van mijn gegevens conform het privacybeleid (AVG / GDPR).",
+    "send": "Verzenden",
+    "successToast": "Bedankt — uw aanvraag is verzonden.",
+    "errorGdpr": "Gelieve akkoord te gaan met de privacyvoorwaarden."
+  },
+  "cookies": {
+    "title": "Wij respecteren uw privacy",
+    "body": "Wij gebruiken cookies om onze website te verbeteren en analytics te verzamelen. U kunt zelf kiezen welke categorieën u aanvaardt.",
+    "accept": "Alles Aanvaarden",
+    "reject": "Enkel Essentiële",
+    "settings": "Instellingen"
+  },
+  "footer": {
+    "tagline": "Belgische logistieke dienstverlener, gespecialiseerd in nationaal en Europees freight transport.",
+    "legal": "Wettelijke informatie",
+    "company": "Bedrijf",
+    "contactCol": "Contact",
+    "rights": "Alle rechten voorbehouden.",
+    "jurisdiction": "RPR Brussel · Nederlandstalige ondernemingsrechtbank Brussel"
+  },
+  "legal": {
+    "privacy": "Privacybeleid",
+    "terms": "Algemene Voorwaarden",
+    "cookies": "Cookiebeleid",
+    "notice": "Juridische Vermeldingen"
+  }
+}
