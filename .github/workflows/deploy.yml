@@ -37,10 +37,22 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Check Build Output Directory
+        run: |
+          if [ -d "dist" ]; then
+            echo "BUILD_PATH=dist" >> $GITHUB_ENV
+          elif [ -d ".output/public" ]; then
+            echo "BUILD_PATH=.output/public" >> $GITHUB_ENV
+          elif [ -d ".output" ]; then
+            echo "BUILD_PATH=.output" >> $GITHUB_ENV
+          else
+            echo "BUILD_PATH=." >> $GITHUB_ENV
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: ${{ env.BUILD_PATH }}
 
       - name: Deploy to GitHub Pages
         id: deployment
