@@ -42,7 +42,7 @@ jobs:
           mkdir -p deploy_dist
           cp -r .output/public/* deploy_dist/
           touch deploy_dist/.nojekyll
-          cp deploy_dist/index.html deploy_dist/404.html || true
+          cp deploy_dist/index.html deploy_dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
