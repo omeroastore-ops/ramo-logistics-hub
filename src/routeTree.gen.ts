@@ -9,43 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as PrivacybeleidRouteImport } from './routes/privacybeleid'
-import { Route as OverOnsRouteImport } from './routes/over-ons'
-import { Route as JuridischeVermeldingenRouteImport } from './routes/juridische-vermeldingen'
-import { Route as DienstenRouteImport } from './routes/diensten'
-import { Route as CookiebeleidRouteImport } from './routes/cookiebeleid'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AlgemeneVoorwaardenRouteImport } from './routes/algemene-voorwaarden'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AlgemeneVoorwaardenRouteImport } from './routes/algemene-voorwaarden'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CookiebeleidRouteImport } from './routes/cookiebeleid'
+import { Route as DienstenRouteImport } from './routes/diensten'
+import { Route as JuridischeVermeldingenRouteImport } from './routes/juridische-vermeldingen'
+import { Route as OverOnsRouteImport } from './routes/over-ons'
+import { Route as PrivacybeleidRouteImport } from './routes/privacybeleid'
 
-const PrivacybeleidRoute = PrivacybeleidRouteImport.update({
-  id: '/privacybeleid',
-  path: '/privacybeleid',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OverOnsRoute = OverOnsRouteImport.update({
-  id: '/over-ons',
-  path: '/over-ons',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const JuridischeVermeldingenRoute = JuridischeVermeldingenRouteImport.update({
-  id: '/juridische-vermeldingen',
-  path: '/juridische-vermeldingen',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DienstenRoute = DienstenRouteImport.update({
-  id: '/diensten',
-  path: '/diensten',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CookiebeleidRoute = CookiebeleidRouteImport.update({
-  id: '/cookiebeleid',
-  path: '/cookiebeleid',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AlgemeneVoorwaardenRoute = AlgemeneVoorwaardenRouteImport.update({
@@ -53,9 +28,34 @@ const AlgemeneVoorwaardenRoute = AlgemeneVoorwaardenRouteImport.update({
   path: '/algemene-voorwaarden',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiebeleidRoute = CookiebeleidRouteImport.update({
+  id: '/cookiebeleid',
+  path: '/cookiebeleid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DienstenRoute = DienstenRouteImport.update({
+  id: '/diensten',
+  path: '/diensten',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JuridischeVermeldingenRoute = JuridischeVermeldingenRouteImport.update({
+  id: '/juridische-vermeldingen',
+  path: '/juridische-vermeldingen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OverOnsRoute = OverOnsRouteImport.update({
+  id: '/over-ons',
+  path: '/over-ons',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacybeleidRoute = PrivacybeleidRouteImport.update({
+  id: '/privacybeleid',
+  path: '/privacybeleid',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -136,46 +136,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/privacybeleid': {
-      id: '/privacybeleid'
-      path: '/privacybeleid'
-      fullPath: '/privacybeleid'
-      preLoaderRoute: typeof PrivacybeleidRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/over-ons': {
-      id: '/over-ons'
-      path: '/over-ons'
-      fullPath: '/over-ons'
-      preLoaderRoute: typeof OverOnsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/juridische-vermeldingen': {
-      id: '/juridische-vermeldingen'
-      path: '/juridische-vermeldingen'
-      fullPath: '/juridische-vermeldingen'
-      preLoaderRoute: typeof JuridischeVermeldingenRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/diensten': {
-      id: '/diensten'
-      path: '/diensten'
-      fullPath: '/diensten'
-      preLoaderRoute: typeof DienstenRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/cookiebeleid': {
-      id: '/cookiebeleid'
-      path: '/cookiebeleid'
-      fullPath: '/cookiebeleid'
-      preLoaderRoute: typeof CookiebeleidRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/algemene-voorwaarden': {
@@ -185,11 +150,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AlgemeneVoorwaardenRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookiebeleid': {
+      id: '/cookiebeleid'
+      path: '/cookiebeleid'
+      fullPath: '/cookiebeleid'
+      preLoaderRoute: typeof CookiebeleidRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diensten': {
+      id: '/diensten'
+      path: '/diensten'
+      fullPath: '/diensten'
+      preLoaderRoute: typeof DienstenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/juridische-vermeldingen': {
+      id: '/juridische-vermeldingen'
+      path: '/juridische-vermeldingen'
+      fullPath: '/juridische-vermeldingen'
+      preLoaderRoute: typeof JuridischeVermeldingenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/over-ons': {
+      id: '/over-ons'
+      path: '/over-ons'
+      fullPath: '/over-ons'
+      preLoaderRoute: typeof OverOnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacybeleid': {
+      id: '/privacybeleid'
+      path: '/privacybeleid'
+      fullPath: '/privacybeleid'
+      preLoaderRoute: typeof PrivacybeleidRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -208,3 +208,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
