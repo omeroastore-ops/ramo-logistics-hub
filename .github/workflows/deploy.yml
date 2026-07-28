@@ -37,24 +37,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Prepare Output Directory
+      - name: Prepare SPA Artifact
         run: |
           mkdir -p deploy_dist
-          
-          # البحث عن أين ينتهي البناء ونسخه
-          if [ -d ".output/public" ]; then
-            cp -r .output/public/* deploy_dist/ || true
-          fi
           if [ -d "dist" ]; then
-            cp -r dist/* deploy_dist/ || true
+            cp -r dist/* deploy_dist/
+          elif [ -d ".output/public" ]; then
+            cp -r .output/public/* deploy_dist/
           fi
-          if [ -d ".output/server" ]; then
-            cp -r .output/* deploy_dist/ || true
-          fi
-          
-          # إنشاء الملفات المساعدة للـ SPA
           touch deploy_dist/.nojekyll
-          find deploy_dist -name "index.html" -exec cp {} deploy_dist/404.html \; || true
+          [ -f deploy_dist/index.html ] && cp deploy_dist/index.html deploy_dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
