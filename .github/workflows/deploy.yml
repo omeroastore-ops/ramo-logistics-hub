@@ -1,4 +1,4 @@
-name: Deploy Website to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -37,22 +37,21 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Check Build Output Directory
+      - name: Prepare Static Output
         run: |
-          if [ -d "dist" ]; then
-            echo "BUILD_PATH=dist" >> $GITHUB_ENV
-          elif [ -d ".output/public" ]; then
-            echo "BUILD_PATH=.output/public" >> $GITHUB_ENV
-          elif [ -d ".output" ]; then
-            echo "BUILD_PATH=.output" >> $GITHUB_ENV
-          else
-            echo "BUILD_PATH=." >> $GITHUB_ENV
+          mkdir -p deploy_dist
+          if [ -d ".output/public" ]; then
+            cp -r .output/public/* deploy_dist/
+          elif [ -d "dist" ]; then
+            cp -r dist/* deploy_dist/
           fi
+          touch deploy_dist/.nojekyll
+          [ -f deploy_dist/index.html ] && cp deploy_dist/index.html deploy_dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.BUILD_PATH }}
+          path: './deploy_dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
