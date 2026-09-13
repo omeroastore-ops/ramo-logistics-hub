@@ -41,15 +41,9 @@ jobs:
       - name: Prepare SPA Artifact
         run: |
           mkdir -p deploy_dist
-          if [ -d ".output/public" ]; then
-            cp -r .output/public/* deploy_dist/
-          elif [ -d "dist" ]; then
-            cp -r dist/* deploy_dist/
-          fi
+          cp -R dist/client/. deploy_dist/
           touch deploy_dist/.nojekyll
-          if [ -f "deploy_dist/index.html" ]; then
-            cp deploy_dist/index.html deploy_dist/404.html
-          fi
+          cp deploy_dist/index.html deploy_dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
