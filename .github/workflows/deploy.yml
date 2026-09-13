@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -40,16 +41,15 @@ jobs:
       - name: Prepare SPA Artifact
         run: |
           mkdir -p deploy_dist
-          if [ -d .output/public ]; then
-            cp -r .output/public/. deploy_dist/
-          elif [ -d dist/client ]; then
-            cp -r dist/client/. deploy_dist/
-          else
-            echo "No static build directory found"
-            exit 1
+          if [ -d ".output/public" ]; then
+            cp -r .output/public/* deploy_dist/
+          elif [ -d "dist" ]; then
+            cp -r dist/* deploy_dist/
           fi
           touch deploy_dist/.nojekyll
-          cp deploy_dist/index.html deploy_dist/404.html
+          if [ -f "deploy_dist/index.html" ]; then
+            cp deploy_dist/index.html deploy_dist/404.html
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
