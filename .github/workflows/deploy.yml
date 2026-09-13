@@ -40,7 +40,14 @@ jobs:
       - name: Prepare SPA Artifact
         run: |
           mkdir -p deploy_dist
-          cp -r .output/public/* deploy_dist/
+          if [ -d .output/public ]; then
+            cp -r .output/public/. deploy_dist/
+          elif [ -d dist/client ]; then
+            cp -r dist/client/. deploy_dist/
+          else
+            echo "No static build directory found"
+            exit 1
+          fi
           touch deploy_dist/.nojekyll
           cp deploy_dist/index.html deploy_dist/404.html
 
